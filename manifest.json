@@ -1,0 +1,8 @@
+{
+  "name": "텍스트 선택 플러그인",
+  "id": "text-selector",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/index.html",
+  "editorType": ["figma","dev"]
+}

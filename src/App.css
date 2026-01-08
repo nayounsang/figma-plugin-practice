@@ -1,0 +1,167 @@
+.app-container {
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: #ffffff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.language-selector {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-selector > label:first-child {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.radio-group label:hover {
+  opacity: 0.9;
+}
+
+.radio-group input[type="radio"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  accent-color: #ffffff;
+}
+
+.options-list {
+  margin-bottom: 20px;
+}
+
+.options-list h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.options-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.options-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.options-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.options-table tbody tr {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.options-table tbody tr:hover {
+  background: #f8f9ff;
+  transform: translateX(2px);
+}
+
+.options-table tbody tr.selected {
+  background: linear-gradient(90deg, #e8eaff 0%, #f0f4ff 100%);
+  border-left: 4px solid #667eea;
+  font-weight: 500;
+}
+
+.options-table tbody tr.selected:hover {
+  background: linear-gradient(90deg, #d8daff 0%, #e8ecff 100%);
+}
+
+.options-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.options-table td {
+  padding: 12px 16px;
+  font-size: 13px;
+}
+
+.option-key {
+  font-weight: 600;
+  color: #333;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 12px;
+}
+
+.option-text {
+  color: #666;
+}
+
+.selected-info {
+  padding: 16px;
+  background: linear-gradient(135deg, #e8eaff 0%, #f0f4ff 100%);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.selected-info p {
+  margin: 6px 0;
+  font-size: 13px;
+  color: #333;
+}
+
+.selected-info p:first-child {
+  margin-top: 0;
+}
+
+.selected-info p:last-child {
+  margin-bottom: 0;
+}
+
+.selected-info strong {
+  color: #667eea;
+  font-weight: 600;
+}
